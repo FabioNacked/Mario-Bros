@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+/* Sessão fonts */
+@font-face {
+  font-family: 'mario';
+  src: url(../fonts/super-mario-bros-2-regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'mario';
+}
+
+/* Sessão game bord */
+
+.game-board {
+  position: absolute;
+  width: 1366px;
+  height: 100vh;
+  border: 1px solid #333;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(#87CEEB, #E0F6FF);    
+}
+
+/* Sessão de elementos */
+
+.chao {
+  position: absolute;
+  width: 500px;
+  bottom: 0px;
+  left: 0;
+}
+
+.chao-2 {
+  position: absolute;
+  width: 500px;
+  bottom: 0px;
+  left: 500px;
+}
+
+.chao-3 {
+  position: absolute;
+  width: 500px;
+  bottom: 0px;
+  left: 1000px;
+}
+
+.clouds {
+  position: absolute;
+  width: 600px;
+  bottom: 400px;
+  animation: clouds-animation 30s linear infinite;
+}
+
+.clouds-2 {
+  position: absolute;
+  width: 500px;
+  bottom: 300px;
+  animation: clouds-animation 20s linear infinite;
+}
+
+.mario {
+  position: absolute;
+  bottom: 40px;
+  width: 150px;
+}
+
+.pipe {
+  position: absolute;
+  bottom: 40px;
+  width: 80px;
+  animation: pipe-animation 5s linear infinite;
+  right: 1000px;
+}
+
+.missil {
+  position: absolute;
+  bottom: 100px;
+  animation: missil-animation 5s linear infinite;
+  right: 500px;
+}
+
+.moeda {
+  position: absolute;
+  width: 90px;
+  bottom: 200px;
+  animation: moeda-animation 5s linear infinite;
+  right: 1000px;
+}
+
+.estrela {
+  position: absolute;
+  width: 60px;
+  bottom: 500px;
+  animation: estrela-animation 10s linear infinite;
+  right: 1000px;
+}
+
+/* Sessão de Placar */
+
+.placar {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.topo-placar {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px; 
+  background-color: rgba(231, 229, 197, 0.774);
+  box-shadow: 3px 3px 3px black;
+  opacity: 90%;
+}
+
+.logo-placar {
+
+
+}
+
+.coluna {
+  display: block;
+  text-align: ;
+}
+
+.nome-jogador {
+  
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.moeda-placar {
+
+}
+
+.estrela-placar {
+
+}
+
+.pontos {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+/* Sessão de interações */
+
+
+.jump {
+  animation: jump-mario-animation 500ms ease-out;
+}
+
+
+.voar {
+  animation: voar-mario-animation 500ms ease-out;
+}
+
+/* Sessão de keyframes */
+
+@keyframes clouds-animation {
+  from {
+    right: -600px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes moeda-animation {
+  from {
+    right: -600px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes estrela-animation {
+  from {
+    right: -600px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes missil-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump-mario-animation {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 200px;
+  }
+  50% {
+    bottom: 200px;
+  }
+  60% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+/*@keyframes voar-mario-animation {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 500px;
+  }
+  50% {
+    bottom: 500px;
+  }
+  60% {
+    bottom: 500px;
+  }
+  100% {
+    bottom: 0;
+  }
+}*/
