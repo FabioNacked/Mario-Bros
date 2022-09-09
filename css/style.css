@@ -11,20 +11,51 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'mario';
+  text-decoration: none;
 }
 
 /* Sessão game bord */
 
-.game-board {
-  position: absolute;
+.cenario {
+  position: relative;
   width: 1366px;
   height: 100vh;
   border: 1px solid #333;
   margin: 0 auto;
   overflow: hidden;
-  background: linear-gradient(#87CEEB, #E0F6FF);    
+  background: linear-gradient(#0097d3, white);
 }
 
+.cenario .placar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: left;    
+}
+
+.cenario .placar .placar-topo {
+  position: relative;
+  justify-content: left;
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.527);
+  border: solid 4px black;
+  box-shadow: 3px 3px 3px black;
+  opacity: 90%;
+  display: flex;
+  font-size: 30px;
+}
+
+.cenario .placar .placar-topo .logo-placar {
+}
+
+.cenario .placar .placar-topo .label-topo {
+}
+
+.cenario .placar .placar-topo .label-topo .moeda-placar {
+}
 /* Sessão de elementos */
 
 .chao {
@@ -101,13 +132,13 @@
 
 /* Sessão de Placar */
 
-.placar {
+/*.placar {
   display: flex;
   justify-content: right;
   width: 100%;
 }
 
-.topo-placar {
+.placar-topo {
   width: 300px;
   height: 200px;
   margin: 20px;
@@ -115,12 +146,11 @@
   background-color: rgba(231, 229, 197, 0.774);
   box-shadow: 3px 3px 3px black;
   opacity: 90%;
-}
+}*/
 
-.logo-placar {
-
-
-}
+/*.logo-placar {
+  
+}*/
 
 .coluna {
   display: block;

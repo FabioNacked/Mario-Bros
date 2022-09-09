@@ -12,8 +12,36 @@
     <title>Super Mario Bros</title>
 
 </head>
+
 <body>
-    <main>
+    <main class="cenario" id="cenario">
+        
+        <section class="placar">
+            <div class="placar-topo">
+                
+                <div class="logo-placar"><img src="images/placar/logo-placar.png" class="logo-placar"></div>
+                
+                <label class="label-topo">
+                    <span class="jogador verde" id="txtJogador">Nome</span>
+                </label>
+                
+                <div class="controle">
+
+                    <label class="label-topo">
+                        <span class="moeda-placar"><img src="images/placar/moeda-placar.png"></span>
+                        <span class="pontos" id="number-moeda">00</span>
+                    </label>
+
+                    <label class="label-topo">
+                        <span class="estrela-placar"><img src="images/placar/estrela-placar.png"></span>
+                        <span class="pontos" id="number-moeda">00</span>
+                    </label>
+                    
+                </div>
+            </div>
+            
+        </section>
+
         <section class="game-board">
             <img src="images/cenario/chao-mario.png" class="chao">
             <img src="images/cenario/chao-mario.png" class="chao-2">
@@ -30,27 +58,6 @@
             <img src="images/elementos/estrela.gif" class="estrela" id="">
         </section>
 
-        <section class="placar">
-            <div class="topo-placar">
-
-                    <img src="images/placar/logo-placar.png" class="logo-placar">
-                <div class="coluna">
-                    
-                    <span class="texto" id="nome-jogador"> Nome Jogador</span>
-                </div>
-                <div class="coluna">
-                    <div class="coluna-placar">
-                        <span class="moeda-placar"><img src="images/placar/moeda-placar.png"></span>
-                        <span class="pontos" id="number-moeda"> 00</span>
-                    </div>
-                    <div class="coluna-placar">
-                        <span class="estrela-placar"><img src="images/placar/estrela-placar.png"></span>
-                        <span class="pontos" id="number-moeda"> 00</span>
-                    </div>
-                </div>
-            </div>
-
-        </section>
     </main>
 </body>
 </html>
